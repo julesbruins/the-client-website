@@ -1,11 +1,11 @@
 @font-face {
     font-family: "archivo";
-    src: url("../assets/Archivo-VariableFont_wdth/wght.ttf");
+    src: url("../assets/Archivo-VariableFont_wdth\,wght.ttf");
   }
   
   @font-face {
     font-family: "martianmono";
-    src: url("../assets/MartianMono-VariableFont_wdth/,wght.ttf");
+    src: url("../assets/MartianMono-VariableFont_wdth\,wght.ttf")
   }
   
   :root {
@@ -21,24 +21,26 @@
     margin: 0;
   }
   
+  /* hele document */
   body {
     margin: 0 16px; 
   }
   
-  /* header */
+  /* links in class header */
   a.header {
     text-decoration: none;
     font-family: "martianmono";
     font-size: 16px;
     color: var(--zwart);
   }
-  
+
   h1 {
     font-family: "archivo";
     font-size: 96px;
     font-weight: bold;
   }
   
+  /* paragraphs in class header */
   p.header {
     font-family: "archivo";
     font-size: 24px;
@@ -71,4 +73,4 @@
   
   li {
     list-style-type: none;
-  }/* CSS */
+  }
