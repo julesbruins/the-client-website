@@ -13,34 +13,36 @@
   <header>
     <nav>
       <!-- navigatie logo -->
-      <img src="../the-client-website/assets/logo.svg" alt="terug naar homepagina">
+      <div class="left-container">
+        <a href="/">
+          <img src="../the-client-website/assets/logo.svg" alt="terug naar homepagina">
+        </a>
 
-      <!-- navigatie links -->
-      <ul class="nav">
-        <li><a class="header" href="">over ons</a></li>
-        <li><a class="header" href="">events</a></li>
-        <li><a class="header" href="">publicaties</a></li>
-        <li><a class="header" href="">leden</a></li>
-        <li><a class="header" href="">vacatures</a></li>
-      </ul>
-
+        <!-- navigatie links -->
+        <ul class="nav">
+          <li><a class="header" href="">over ons</a></li>
+          <li><a class="header" href="">events</a></li>
+          <li><a class="header" href="">publicaties</a></li>
+          <li><a class="header" href="">leden</a></li>
+          <li><a class="header" href="">vacatures</a></li>
+        </ul>
+      </div>
       <!-- navigatie rechts -->
-      <a class="blauwe-link" href="">inloggen
-        <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
-      </a>
-      <a class="header" href="">word lid
-        <img src="assets/arrow-right.svg" alt="pijltje naar rechts">
-      </a>  
-      </button>
+      <div class="right-container">
+        <a class="blauwe-link" href="">inloggen
+          <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
+        </a>
+        <a class="header" href="">word lid
+          <img src="assets/arrow-right.svg" alt="pijltje naar rechts">
+        </a>
+      </div>
     </nav>
-  
-
   </header>
 
   <main>
     <section class="heading">
-         <!-- terug naar home link -->
-      <a class="header" href=""><img src="assets/arrow-left.svg" alt="pijltje naar links">terug naar home</a> 
+      <!-- terug naar home link -->
+      <a class="header" href=""><img src="assets/arrow-left.svg" alt="pijltje naar links">terug naar home</a>
       <h1>Events</h1>
       <p class="header">Spraakmakende sprekers. Inspirerende kennissessies. Events waar je écht bij wilt zijn. En waar
         je al je vakgenoten weer spreekt. Versterk je bureau met kennis en inspiratie over bureaumanagement, leiderschap
@@ -50,114 +52,146 @@
     <section class="trending">
       <h2 class="visually-hidden">trending events</h2>
       <!-- drie articles met plaatjes -->
-      <article class="overzicht">
+      <article class="event-item">
         <img src="../the-client-website/assets/dutch-digital-day.png" alt="dutch digital day">
-        <p class="label"><abbr title="Dutch Digital Day">DDD</abbr></p>
-        <p class="data">wo 09 nov / Amsterdam</p>
-        <h3>Dutch Digital Day: The 10th edition</h3>
-        <a class="blauwe-link" href="">DETAILS 
-          <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
-        </a>
+        <div class="text">
+          <div class="top">
+            <p class="label"><abbr title="Dutch Digital Day">DDD</abbr></p>
+            <p class="data">wo 09 nov / Amsterdam</p>
+            <h3>Dutch Digital Day: The 10th edition</h3>
+          </div>
+          <a class="blauwe-link" href="">DETAILS
+            <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
+          </a>
+        </div>
       </article>
 
-      <article>
+      <article class="event-item">
         <img src="../the-client-website/assets/leden-bijeenkomst.png" alt="leden bijeenkomst">
-        <p class="label"><abbr title="Dutch Digital Day">DDD</abbr></p>
-        <p class="data">do 10 nov / Utrecht</p>
-        <h3>Leden bijeenkomst</h3>
-        <a class="blauwe-link" href="">DETAILS
-          <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
-        </a>
+        <div class="text">
+          <div class="top">
+            <p class="label"><abbr title="Dutch Digital Day">DDD</abbr></p>
+            <p class="data">do 10 nov / Utrecht</p>
+            <h3>Leden bijeenkomst</h3>
+          </div>
+          <a class="blauwe-link" href="">DETAILS
+            <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
+          </a>
+        </div>
       </article>
 
-      <article>
+      <article class="event-item">
         <img src="../the-client-website/assets/creatieve-jam.png" alt="creatieve jam">
-        <p class="label">vergadering</p>
-        <p class="data">ma 31 dec / Amsterdam</p>
-        <h3>Creative Jam Dutch Design Week</h3>
-        <a class="blauwe-link" href="">DETAILS
-          <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
-        </a>
+        <div class="text">
+          <div class="top">
+            <p class="label">vergadering</p>
+            <p class="data">ma 31 dec / Amsterdam</p>
+            <h3>Creative Jam Dutch Design Week</h3>
+          </div>
+          <a class="blauwe-link" href="">DETAILS
+            <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
+          </a>
+        </div>
       </article>
-    </section> 
+    </section>
 
     <section class="search">
       <h2 class="visually-hidden">Aankomende events</h2>
 
       <!-- SEARCH NOG AANPASSEN!!! -->
-        <form action="./search">
-          <label for="event">zoek een event...</label>
-          <input type="search" id="event" name="search">
-          <button type="submit">zoek</button>
-        </form>
-      <button>THEMA</button>
-      <button>LOCATIE</button>
+      <form action="./search">
+        <label for="event">zoek een event...</label>
+        <input type="search" id="event" name="search">
+        <button type="submit">zoek</button>
+      </form>
+      <div class="flex-container">
+        <button>THEMA</button>
+        <button>LOCATIE</button>
+      </div>
+    </section>
 
-      <!-- lijst met events -->
+    <!-- lijst met events -->
+    <section class="list-item">
       <ul class="lijst-events">
         <li class="event">
           <p class="label">UX</p>
           <h4>Creative Jam Dutch Design Week</h4>
+        <div class="flex-container">
           <p class="data">01 nov / Eindhoven</p>
-          <a class="blauwe-link" href="">DETAILS
-            <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
-          </a>
+            <a class="blauwe-link" href="">DETAILS
+              <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
+            </a>
+          </div>
         </li>
         <li>
           <p class="label">HR</p>
           <h4>DDA Ledenbijeenkomst</h4>
-          <p class="data">09 nov / Amsterdam</p>
+          <div class="flex-container">
+            <p class="data">09 nov / Amsterdam</p>
           <a class="blauwe-link" href="">DETAILS
             <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
           </a>
+        </div>
         </li>
         <li>
           <p class="label">UX</p>
           <h4>Creative Jam Dutch Design Week</h4>
+          <div class="flex-container">
           <p class="data">01 nov / Eindhoven</p>
-          <a class="blauwe-link" href="">DETAILS 
+          <a class="blauwe-link" href="">DETAILS
             <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
           </a>
+        </div>
         </li>
         <li>
           <p class="label">HR</p>
           <h4>DDA Ledenbijeenkomst</h4>
+          <div class="flex-container">
           <p class="data">09 NOV / AMSTERDAM</p>
-          <a class="blauwe-link" href="">DETAILS 
+          <a class="blauwe-link" href="">DETAILS
             <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
           </a>
+        </div>
         </li>
         <li>
           <p class="label">UX</p>
           <h4>Creative Jam Dutch Design Week</h4>
+          <div class="flex-container">
           <p class="data">01 nov / Eindhoven</p>
           <a class="blauwe-link" href="">DETAILS
             <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
           </a>
+          </div>
         </li>
         <li>
           <p class="label">HR</p>
           <h4>DDA Ledenbijeenkomst</h4>
-          <p class="data">09 nov / Amsterdam</p>
+          <div class="flex-container">
+            <p class="data">09 nov / Amsterdam</p>
           <a class="blauwe-link" href="">DETAILS
             <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
           </a>
+        </div>
         </li>
         <li>
           <p class="label">UX</p>
           <h4>Creative Jam Dutch Design Week</h4>
+          <div class="flex-container">
           <p class="data">01 nov / Eindhoven</p>
           <a class="blauwe-link" href="">DETAILS
             <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
           </a>
+          </div>
         </li>
         <li>
           <p class="label">HR</p>
           <h4>DDA Ledenbijeenkomst</h4>
+        <div class="flex-container">  
           <p class="data">09 nov / Amsterdam</p>
           <a class="blauwe-link" href="">DETAILS
             <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
           </a>
+        </div>
         </li>
       </ul>
 
@@ -201,7 +235,7 @@
           <p class="data">03 dec / Utrecht</p>
           <p class="verleden">HEEFT PLAATSGEVONDEN</p>
           <a class="blauwe-link" href="">BUTTON
-            <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">          
+            <img src="../the-client-website/assets/right-blauw.svg" alt="pijltje naar rechts">
           </a>
         </li>
       </ul>
@@ -217,30 +251,30 @@
     </section>
 
     <section>
-        <!-- deel 1 footer -->
-        <h3>Blijf op de hoogte van onze events</h3>
+      <!-- deel 1 footer -->
+      <h3>Blijf op de hoogte van onze events</h3>
 
-        <!-- email-adres balk? -->
-    
-        <a class="header" href="">AANMELDEN <img src="assets/arrow-right.svg" alt="pijltje naar rechts"></a>
-    
-        <!-- deel 2 footer -->
-        <h3>Wij bedanken onze trouwe partners</h3>
-        <a class="header" href="">WORD PARTNER <img src="assets/arrow-right.svg" alt="pijltje naar rechts"></a>
-    
-        <!-- reclame foto's -->
-        <div>
-          <img src="../the-client-website/assets/rootnet logo.png" alt="logo rootnet">
-          <img src="../the-client-website/assets/ictrecht logo.png" alt="logo ictrecht">
-          <img src="../the-client-website/assets/amac logo.png" alt="logo Amac">
-          <img src="../the-client-website/assets/rootnet logo.png" alt="logo rootnet">
-          <img src="../the-client-website/assets/ictrecht logo.png" alt="logo ictrecht">
-          <img src="../the-client-website/assets/amac logo.png" alt="logo Amac">
-          <img src="../the-client-website/assets/rootnet logo.png" alt="logo rootnet">
-          <img src="../the-client-website/assets/ictrecht logo.png" alt="logo ictrecht">
-          <img src="../the-client-website/assets/amac logo.png" alt="logo Amac">
-        </div>
-      </section>
+      <!-- email-adres balk? -->
+
+      <a class="header" href="">AANMELDEN <img src="assets/arrow-right.svg" alt="pijltje naar rechts"></a>
+
+      <!-- deel 2 footer -->
+      <h3>Wij bedanken onze trouwe partners</h3>
+      <a class="header" href="">WORD PARTNER <img src="assets/arrow-right.svg" alt="pijltje naar rechts"></a>
+
+      <!-- reclame foto's -->
+      <div>
+        <img src="../the-client-website/assets/rootnet logo.png" alt="logo rootnet">
+        <img src="../the-client-website/assets/ictrecht logo.png" alt="logo ictrecht">
+        <img src="../the-client-website/assets/amac logo.png" alt="logo Amac">
+        <img src="../the-client-website/assets/rootnet logo.png" alt="logo rootnet">
+        <img src="../the-client-website/assets/ictrecht logo.png" alt="logo ictrecht">
+        <img src="../the-client-website/assets/amac logo.png" alt="logo Amac">
+        <img src="../the-client-website/assets/rootnet logo.png" alt="logo rootnet">
+        <img src="../the-client-website/assets/ictrecht logo.png" alt="logo ictrecht">
+        <img src="../the-client-website/assets/amac logo.png" alt="logo Amac">
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -248,8 +282,8 @@
 
     <!-- deel 4 footer links -->
     <div>
-    <img src="../the-client-website/assets/logo.svg" alt="logo">
-    <a href="">inloggen <img src="assets/arrow-right.svg" alt="pijltje naar rechts"></a>
+      <img src="../the-client-website/assets/logo.svg" alt="logo">
+      <a href="">inloggen <img src="assets/arrow-right.svg" alt="pijltje naar rechts"></a>
     </div>
 
     <!-- deel 4 footer midden -->
@@ -266,21 +300,21 @@
     </nav>
 
     <!-- deel 4 footer rechts -->
-    <div> 
-    <p>Dutch Digital Agencies
-      Overhoeksplein 1
-      1031 KS Amsterdam</p>
-    <a href="tel:(0)85 4010391">(0)85 4010391</a>
-    <a href="mailto:info@dutchdigitalagencies.com">info@dutchdigitalagencies.com</a>
-  </div>
+    <div>
+      <p>Dutch Digital Agencies
+        Overhoeksplein 1
+        1031 KS Amsterdam</p>
+      <a href="tel:(0)85 4010391">(0)85 4010391</a>
+      <a href="mailto:info@dutchdigitalagencies.com">info@dutchdigitalagencies.com</a>
+    </div>
 
-  <div></div>
+    <div></div>
     <!-- deel 5 bodem footer -->
     <a href="https://www.instagram.com/dutchdigitalagencies/">Instagram</a>
     <a href="https://www.facebook.com/DutchDigitalAgencies/">Facebook</a>
     <a href="https://nl.linkedin.com/company/dutch-digital-agencies">LinkedIn</a>
     <p class="footer">Copyright © 2023 Dutch Digital Agencies</p>
-  
+
   </footer>
 </body>
 
