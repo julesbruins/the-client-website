@@ -15,7 +15,7 @@
   --blauw: rgb(54, 75, 247);
   --spacing: 16px;
   --large-spacing: 48px;
-  --border: 1px solid currentColor;
+  --border: 1px solid black;
 }
 
 @media (max-width: 750px) {
@@ -199,6 +199,10 @@ section.list-item {
     padding-bottom: 32px;
   }
 
+  li:last-child {
+    border-bottom: 0px solid;
+  }
+
   .label {
     margin-top: 32px;
   }
@@ -215,8 +219,49 @@ section.list-item {
     display: flex;
     justify-content: space-between;
   }
+
 }
 
+section.extra { 
+  padding: 78px 0 78px 0;
+  border-top: var(--border);
+  border-bottom: var(--border);
+  text-align: center;
+}
+
+section.past {
+    margin: 48px;
+    
+    h3 {
+    margin: 24px 0 40px 0;
+    }
+    
+    li {
+      border-bottom: var(--border);
+      padding-bottom: 32px;
+    }
+
+    li:last-child {
+      border-bottom: 0px solid;
+      padding-bottom: 0px;
+    }
+
+    .label {
+      margin-top: 32px;
+      margin-bottom: 16px;
+    }
+    
+    p.data {
+      margin-top: var(--spacing);
+    }
+    p {
+      margin-top: var(--spacing);
+    }
+    a {
+      margin-top: var(--spacing);
+    }
+
+}
 
 .label {
   font-weight: light;
