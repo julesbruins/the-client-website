@@ -232,8 +232,8 @@ section.extra {
 section.past {
     margin: var(--large-spacing);
     
-    h3 {
-    margin: var(--middle-spacing) 0 40px 0;
+    h4 {
+      font-weight: normal;
     }
     
     li {
@@ -257,8 +257,22 @@ section.past {
     p {
       margin-top: var(--spacing);
     }
+    p.verleden {
+      color: var(--blauw);
+    }
     a {
       margin-top: var(--spacing);
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: row;
+      gap: var(--spacing);
+      /* justify-content: space-between; */
+      .right {
+        margin-left: auto;
+        margin-top: var(--spacing);
+      }
     }
 
 }
