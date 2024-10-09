@@ -320,7 +320,7 @@ section.dank {
 
 .logos {
   display: flex;
-  overflow-x: scroll;
+  overflow-x: auto;
   height: 150px;
   
   img {
