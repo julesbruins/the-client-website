@@ -532,7 +532,64 @@ li {
 
     h3 {
       font-size: 2em;
-      font-weight: semibold;
+      font-weight: 300;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+
+      p.verleden {
+        margin: 0px;
+      }
+      .right {
+        margin: 0px;
+      }
+    }
+  }
+
+  section.up2date {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+
+    h3 {
+      font-size: 1.5em;
+      font-weight: 300;
+      line-height: 1;
+    }
+  }
+  section.dank {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 2em;
+
+    h3 {
+      font-size: 1.5em;
+      font-weight: 300;
+      line-height: 1;
+    }
+
+    footer {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+
+      .left {
+        grid-column: 1;
+        grid-row: 1;
+      }
+      .footer {
+        grid-column: 1;
+        grid-row: 2;
+      }
+      .right {
+        grid-column: 1;
+        grid-row: 3;
+      }
     }
   }
 }
