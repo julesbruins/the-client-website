@@ -22,13 +22,23 @@
 }
 
 @media (width < 361px) {
-  :root {
-    --border: 0px solid white;
-  } 
-
   body {
     width: 360px;
+    border: 0px solid white;
   }
+
+  /* header */
+
+  section.heading {
+    h1 {
+      font-size: 3em;
+    }
+
+    .header {
+      font-size: 1em;
+    }
+  }
+
 }
 
 /* @media (width > 1080px) {
@@ -126,7 +136,7 @@ section.heading {
     text-transform: uppercase;
   }
 
-  .header {
+  .header {                         /* terug naar home <a> */
     font-family: "archivo";
     font-size: 1.5em;
     text-transform: none;
