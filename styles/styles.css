@@ -13,17 +13,31 @@
   --grijs: #666666;
   --wit: #FFFFFF;
   --blauw: rgb(54, 75, 247);
+
   --spacing: 16px;
   --middle-spacing: 24px;
   --large-spacing: 48px;
+
   --border: 1px solid black;
 }
 
-@media (max-width: 750px) {
+@media (width < 361px) {
   :root {
-    --spacing: 8px;
+    --border: 0px solid white;
+  } 
+
+  body {
+    width: 360px;
   }
 }
+
+/* @media (width > 1080px) {
+:root {
+  --border: 1px solid black;
+} */
+/* } */
+
+
 
 /* CSS reset */
 * {
@@ -64,7 +78,7 @@ a {
   text-decoration: none;
   font-family: "martianmono";
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 
@@ -100,23 +114,23 @@ section.heading {
   display: flex;
   flex-direction: column;
   padding-top: var(--large-spacing);
-  max-width: 900px;
+  max-width: 56.25em;                   /*  is 900px */
   text-align: center;
   margin: auto;
 
   h1 {
     padding-top: var(--spacing);
     font-family: "archivo";
-    font-size: 96px;
+    font-size: 6em;
     font-weight: bold;
     text-transform: uppercase;
   }
 
   .header {
     font-family: "archivo";
-    font-size: 24px;
+    font-size: 1.5em;
     text-transform: none;
-    line-height: 40px;
+    line-height: 2.5em;
     padding-top: var(--spacing);
   }
 
@@ -191,7 +205,7 @@ article {
 
   .blauwe-link {
     display: block;
-    margin-top: 56px;
+    margin-top: 3.5em;
   }
 }
 
@@ -208,15 +222,15 @@ section.list-item {
 
   li {
     border-bottom: var(--border);
-    padding-bottom: 32px;
+    padding-bottom: 2em;
   }
 
   li:last-child {
-    border-bottom: 0px solid;
+    border-bottom: 0em solid;
   }
 
   .label {
-    margin-top: 32px;
+    margin-top: 2em;
   }
   
   h4 {
@@ -235,7 +249,7 @@ section.list-item {
 }
 
 .extra { 
-  padding: 78px 0 78px 0;
+  padding: 4.875em 0 4.875em 0;       /*  78px */
   border-top: var(--border);
   border-bottom: var(--border);
   text-align: center;
@@ -250,7 +264,7 @@ section.past {
     
     li {
       border-bottom: var(--border);
-      padding-bottom: 32px;
+      padding-bottom: 2em;
     }
 
     li:last-child {
@@ -259,7 +273,7 @@ section.past {
     }
 
     .label {
-      margin-top: 32px;
+      margin-top: 2em;
       margin-bottom: var(--spacing);
     }
     
@@ -293,11 +307,12 @@ section.up2date {
   justify-content: space-between;
   padding: var(--large-spacing);
   border-bottom: var(--border);
+  align-items: center;
 
   h3 {
     font-family: "archivo";
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2em;
+    line-height: 2.5em;
     text-transform: none;
     font-weight: normal;
   }
@@ -308,11 +323,12 @@ section.dank {
   justify-content: space-between;
   padding: var(--large-spacing);
   border-bottom: var(--border);
+  align-items: center;
 
   h3 {
     font-family: "archivo";
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 2em;
+    line-height: 2.5em;
     text-transform: none;
     font-weight: normal;
   }
@@ -321,11 +337,16 @@ section.dank {
 .logos {
   display: flex;
   overflow-x: auto;
+  overscroll-behavior-x: contain;
   height: 150px;
   
   img {
     height: 150px;
     border-right: var(--border);
+  }
+
+  img:last-child {
+    border-right: 0px solid;
   }
 }
 
