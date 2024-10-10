@@ -459,7 +459,7 @@ li {
 }
 
 
-@media (width < 361px) {
+@media (width < 460px) {
   body {
     width: 360px;
     border: none;
